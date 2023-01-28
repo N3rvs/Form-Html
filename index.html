@@ -31,26 +31,26 @@
               <div class="col-5">
                 <div class="form-group">
                   <label for="exampleInputEmail1"><strong>Card #</strong></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="example"
                     placeholder="XXXXXXXXXXXXXX">
                 </div>
               </div>
               <div class="col-3">
                 <div class="form-group">
-                  <label for="exampleInputEmail1"><strong>CVC #</strong></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  <label for="secretCode"><strong>CVC #</strong></label>
+                  <input type="number" class="form-control" id="secretCode" aria-describedby="example"
                     placeholder="0000">
                 </div>
               </div>
               <div class="col-4">
                 <div class="form-group">
-                  <label for="exampleInputEmail1"><strong>Amount</strong></label>
+                  <label for="amount"><strong>Amount</strong></label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend ">
                       <span class="input-group-text bg-white border-0" id="basic-addon1"><i
                           class="fa-solid fa-dollar-sign"></i></span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Amount" aria-label="Username"
+                    <input type="number" class="form-control" placeholder="Amount" aria-label="Username"
                       aria-describedby="basic-addon1">
                   </div>
                 </div>
@@ -60,14 +60,14 @@
             <div class="row m-3">
               <div class="col-6">
                 <div class="form-group">
-                  <label for="exampleInputEmail1"><strong>First Name</strong></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="name"><strong>First Name</strong></label>
+                  <input type="text" class="form-control" id="name" aria-describedby="example">
                 </div>
               </div>
               <div class="col-6">
                 <div class="form-group">
-                  <label for="exampleInputEmail1"><strong>Last Name</strong></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="lastName"><strong>Last Name</strong></label>
+                  <input type="text" class="form-control" id="lastName" aria-describedby="example">
                 </div>
               </div>
             </div>
@@ -75,14 +75,14 @@
             <div class="row m-3">
               <div class="col-6">
                 <div class="form-group">
-                  <label for="exampleInputEmail1"><strong>City</strong></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="city"><strong>City</strong></label>
+                  <input type="text" class="form-control" id="city" aria-describedby="example">
                 </div>
               </div>
               <div class="col-3">
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1"><strong>State</strong></label>
-                  <select class="form-select" id="exampleFormControlSelect1">
+                  <label for="seelectSate"><strong>State</strong></label>
+                  <select class="form-select" id="seelectSate">
                     <option disabled selected hidden>Pick a state</option>
                     <option value="">N/A</option>
                     <option value="AK">Alaska</option>
@@ -96,8 +96,8 @@
               </div>
               <div class="col-3">
                 <div class="form-group">
-                  <label for="exampleInputEmail1"><strong>Postal Code</strong></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="postalCode"><strong>Postal Code</strong></label>
+                  <input type="number" class="form-control" id="postalCode" aria-describedby="example">
                 </div>
               </div>
             </div>
@@ -126,9 +126,9 @@
               </div>
               <div class="col-6 d-block">
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  <small id="emailHelp" class="form-text text-muted">Add any notes here.</small>
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="3"></textarea>
+                  <small id="example" class="form-text text-muted">Add any notes here.</small>
                 </div>
 
               </div>
@@ -137,7 +137,7 @@
 
         </div>
         <div class="card-footer text-muted bg-white">
-          <div class="d-flex flex-row-reverse">
+          <div class="d-flex justify-content-end">
             <button type="button" class="btn btn-primary m-2">Cancel</button>
             <button type="button" class="btn btn-secondary m-2">Send</button>
           </div>
